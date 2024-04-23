@@ -1,7 +1,7 @@
 package tasks;
 
 /**
- * This program demonstrates the concept of hierarchical inheritance.<br>
+ * This program demonstrates the concept of hybrid inheritance.<br>
  * It includes four classes: Vehicle, Car, Bike, ElectricCar.<br>
  * Vehicle class is parent class of other subclasses.<br>
  * Car and Bike are the subclasses of Vehicle, that inherits its properties and overrides drive method.<br>
