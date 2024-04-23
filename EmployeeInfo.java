@@ -1,15 +1,12 @@
 package tasks;
 
 /**
- * This program demonstrates encapsulation and get and sets the employee's information 
+ * This program demonstrates encapsulation and get and sets the employee's information.
+ * It defines base class 'EmpoyeeInfo' that represents the information about employee
+ * and encapulates it.
  * 
  * @author Jayesh Soni
  * @since 2024-04-22
- */
-
-/**
- * This class represents the information about employee.
- * It encapsulates the name and age of employee.
  */
 public class EmployeeInfo {
 

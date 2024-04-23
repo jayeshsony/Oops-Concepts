@@ -1,16 +1,13 @@
 package tasks;
 
 /**
- * This program demonstrates the concept of multilevel inheritance.
+ * This program demonstrates the concept of multilevel inheritance.<br>
+ * It includes three classes: StudentBioData, StudentScore and StudentResultCalculator.<br>
+ * StudentBioData containes methods to store and print student information.<br>
+ * StudentScore extends StudentBioData and it further extended in StudentResutCalculator class.<br>
  * 
  * @author Jayesh Soni
  * @since 2024-04-22
- */
-
-/**
- * This class contains one constructor and one method to get student information and
- * print it respectively. 
- *
  */
 class StudentBioData {
 
@@ -42,7 +39,6 @@ class StudentBioData {
 /**
  * This class contains one constructor and three method to get student marks and
  * print it respectively. 
- *
  */
 class StudentScore extends StudentBioData {
 

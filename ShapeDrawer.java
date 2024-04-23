@@ -1,13 +1,13 @@
 package tasks;
 
 /**
- * This program demonstrates the use of run-time polymorphism.
+ * This program demonstrates the use of run-time polymorphism.<br>
+ * It defines a abstract class 'Shapes' that containes a method to draw different shapes and
+ * 'CircleShape' and 'RectangleShape' are subclasses of it.
  * 
  * @author Jayesh Soni
  * @since 2024-04-22
  */
-
-// Abstract class representing different shapes.
 abstract class Shapes {
 
 	// Abstract method to draw shapes
@@ -16,8 +16,8 @@ abstract class Shapes {
 }
 
 /**
- *This class contains two methods one to draw shape and another to calculate area 
- *respectively.
+ * This class contains two methods one to draw shape and another to calculate
+ * area respectively.
  */
 class CircleShape extends Shapes {
 
@@ -25,18 +25,13 @@ class CircleShape extends Shapes {
 	final float PI = 3.14f;
 	private float radius;
 
-	/**
-	 * This methods overrides the draw method of Shapes class.
-	 * It represents
-	 * run-time polymorphism.
-	 */
 	@Override
 	public void draw() {
 		System.out.println("Draw Circle");
 	}
 
 	/**
-	 * This method calculates the area of circle.
+	 * This method calculates the area of circle.<br>
 	 * It represents compile-time polymorphism.
 	 * 
 	 * @param radius the radius of circle.
@@ -50,26 +45,22 @@ class CircleShape extends Shapes {
 }
 
 /**
- *This class contains two methods one to draw shape and another to calculate area 
- *respectively.
+ * This class contains two methods one to draw shape and another to calculate
+ * area respectively.
  */
 class RectangleShape extends Shapes {
 
 	private float length;
 	private float width;
 
-	/**
-	 * This methods overrides the draw method of Shapes class. It represents
-	 * run-time polymorphism.
-	 */
 	@Override
 	public void draw() {
 		System.out.println("Draw Rectangle");
 	}
 
 	/**
-	 * This method calculates the area of rectangle. It represents compile-time
-	 * polymorphism.
+	 * This method calculates the area of rectangle.<br>
+	 * It represents compile-time polymorphism.
 	 * 
 	 * @param length the length of rectangle.
 	 * @param width  the width of of rectangle.
@@ -80,6 +71,7 @@ class RectangleShape extends Shapes {
 		this.width = width;
 		return length * width;
 	}
+
 }
 
 public class ShapeDrawer {

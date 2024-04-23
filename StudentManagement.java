@@ -1,19 +1,15 @@
 package tasks;
 
 /**
- * This program demonstrates the concept of hierarchical inheritance.
+ * This program demonstrates the concept of hierarchical inheritance.<br>
  * It defines a base class 'student' and two subclasses 'ScienceStream' and 
  * 'CommereceStream' which inherits from 'Student' class.
  * 
  * @author Jayesh Soni
  * @since 2024-04-22
  */
-
-/**
- * This class is a parent class of other two class. It contains one constructor
- * and one method to get the student information and prints it respectively.
- */
 class Student {
+
 	private String name;
 	private int rollNo;
 
@@ -36,6 +32,7 @@ class Student {
 		System.out.println("Name = " + name);
 		System.out.println("Roll number = " + rollNo);
 	}
+
 }
 
 /**
@@ -64,6 +61,7 @@ class ScienceStream extends Student {
 		System.out.println("-Chemestry");
 		System.out.println("-Physics");
 	}
+
 }
 
 /**
@@ -92,6 +90,7 @@ class CommerceStream extends Student {
 		System.out.println("-Economics");
 		System.out.println("-Business Studies");
 	}
+
 }
 
 public class StudentManagement {

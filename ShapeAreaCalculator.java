@@ -1,14 +1,11 @@
 package tasks;
 
 /**
- * This program demonstrates the abstraction and calculates the area of different shapes.
+ * This program demonstrates the abstraction and calculates the area of different shapes.<br>
+ * It includes abstract superclass 'AreaCalculator' and subclasses 'Circle' and 'Rectangle' that extends superclass.
  * 
  * @author Jayesh Soni
  * @since 2024-04-22
- */
-
-/**
- * This class is a abstract class and contains a abstract method to calculate area.
  */
 abstract class AreaCalculator {
 
@@ -32,7 +29,6 @@ class Circle extends AreaCalculator {
 		this.radius = radius;
 	}
 
-	// Override the abstract method to calculate area
 	@Override
 	public double findArea() {
 		return PI * radius * radius;
@@ -57,7 +53,6 @@ class Rectangle extends AreaCalculator {
 		this.width = width;
 	}
 
-	// Override the abstract method to calculate area
 	@Override
 	public double findArea() {
 		return length * width;
