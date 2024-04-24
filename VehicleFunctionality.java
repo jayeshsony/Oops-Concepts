@@ -4,8 +4,10 @@ package tasks;
  * This program demonstrates the concept of hybrid inheritance.<br>
  * It includes four classes: Vehicle, Car, Bike, ElectricCar.<br>
  * Vehicle class is parent class of other subclasses.<br>
- * Car and Bike are the subclasses of Vehicle, that inherits its properties and overrides drive method.<br>
- * ElectricCar is subclass of Car, that inherites its properties and overrides drive method.
+ * Car and Bike are the subclasses of Vehicle, that inherits its properties and
+ * overrides drive method.<br>
+ * ElectricCar is subclass of Car, that inherites its properties and overrides
+ * drive method.
  * 
  * @author Jayesh Soni
  * @since 2024-04-22
@@ -18,7 +20,7 @@ class Vehicle {
 
 }
 
-//Inherits Vehicle properties
+// Inherits Vehicle properties
 class Car extends Vehicle {
 
 	@Override
@@ -28,7 +30,7 @@ class Car extends Vehicle {
 
 }
 
-//Inherits Vehicle properties
+// Inherits Vehicle properties
 class Bike extends Vehicle {
 
 	@Override
@@ -38,7 +40,7 @@ class Bike extends Vehicle {
 
 }
 
-//Inherits Car properties
+// Inherits Car properties
 class ElectricCar extends Car {
 
 	@Override

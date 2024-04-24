@@ -17,14 +17,9 @@ public class ReadTestFile {
 		BufferedReader bufferedReader = null;
 
 		try {
-			// Create FileReader instance
-			fileReader = new FileReader("myTestFile.txt");
-
-			// Create BufferedReader instance from FileReader
-			bufferedReader = new BufferedReader(fileReader);
-
+			fileReader = new FileReader("myTestFile.txt"); // Create FileReader instance
+			bufferedReader = new BufferedReader(fileReader); // Create BufferedReader instance from FileReader
 			String line;
-
 			// Read and print each line of file
 			while( (line = bufferedReader.readLine()) != null) {
 				System.out.println(line);
@@ -32,10 +27,8 @@ public class ReadTestFile {
 		} catch (IOException e) {
 			System.out.println("Opearation failed");
 		} finally {
-			// Close the file
-			fileReader.close();
+			fileReader.close(); // Close the file
 		}
-
 	}
 
 }

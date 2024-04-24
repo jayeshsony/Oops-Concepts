@@ -13,8 +13,7 @@ public class CreateTestFile {
 
 	public static void main(String[] args) {
 		try {
-			// Create new file
-			FileWriter myTestFile = new FileWriter("myTestFile.txt");
+			FileWriter myTestFile = new FileWriter("myTestFile.txt"); // Create new file
 
 			// Write personal inforamtion into file
 			myTestFile.write("Name : Jayesh Soni\n");

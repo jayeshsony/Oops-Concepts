@@ -37,15 +37,12 @@ public class ExceptionHandling {
 		int divisor = scanner.nextInt();
 
 		try {
-			// Call the method
-			double answer = DivideNumber(dividend, divisor);
+			double answer = DivideNumber(dividend, divisor); // Call the method
 			System.out.println("Answer= " + answer);
 		} catch (ArithmeticException e) {
-			// Handle exception
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage()); // Handle exception
 		} finally {
-			// Cleanup code
-			System.out.println("This is finally block.");
+			System.out.println("This is finally block."); // Cleanup code
 			scanner.close();
 		}
 	}
