@@ -52,7 +52,6 @@ public class TypesOfAnimal {
 		// Create instance of lion
 		Lion lion = new Lion();
 		lion.animalType();
-
 	}
 
 }
