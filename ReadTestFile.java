@@ -6,13 +6,13 @@ import java.io.BufferedReader;
 
 /**
  * This program reads 'myTestFile.txt' file and prints it line by line.
- *  
+ * 
  * @author Jayesh Soni
  * @since 2024-04-23
  */
 public class ReadTestFile {
 
-	public static void main(String[] args)  throws IOException{
+	public static void main(String[] args) throws IOException {
 		FileReader fileReader = null;
 		BufferedReader bufferedReader = null;
 
@@ -21,7 +21,7 @@ public class ReadTestFile {
 			bufferedReader = new BufferedReader(fileReader); // Create BufferedReader instance from FileReader
 			String line;
 			// Read and print each line of file
-			while( (line = bufferedReader.readLine()) != null) {
+			while ((line = bufferedReader.readLine()) != null) {
 				System.out.println(line);
 			}
 		} catch (IOException e) {
