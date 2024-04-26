@@ -17,7 +17,7 @@ public class ReadTestFile {
 		BufferedReader bufferedReader = null;
 
 		try {
-			fileReader = new FileReader("myTestFile.txt"); // Create FileReader instance
+			fileReader = new FileReader("MyTestFile.txt"); // Create FileReader instance
 			bufferedReader = new BufferedReader(fileReader); // Create BufferedReader instance from FileReader
 			String line;
 			// Read and print each line of file
