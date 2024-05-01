@@ -19,7 +19,7 @@ public class ExceptionHandling {
 	 * @return the result of the division.
 	 * @throws ArithmeticException if the divisor is zero.
 	 */
-	public static double DivideNumber(int dividend, int divisor) throws ArithmeticException {
+	public static double divideNumber(int dividend, int divisor) throws ArithmeticException {
 		if (divisor == 0) {
 			throw new ArithmeticException("Can't divide by Zero");
 		} else {
@@ -37,7 +37,7 @@ public class ExceptionHandling {
 		int divisor = scanner.nextInt();
 
 		try {
-			double answer = DivideNumber(dividend, divisor); // Call the method
+			double answer = divideNumber(dividend, divisor); // Call the method
 			System.out.println("Answer= " + answer);
 		} catch (ArithmeticException e) {
 			System.out.println(e.getMessage()); // Handle exception
